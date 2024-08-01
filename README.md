@@ -1,4 +1,4 @@
-Streaming Bot README
+Streaming Bot
 Overview
 This project is a Streamlit-based chatbot application that uses Google's Gemini Generative Model to generate responses. The application can take user inputs via text or speech, process them, and provide responses both in text and audio formats. The audio response is generated using Google's Text-to-Speech (gTTS) library. The application also supports real-time streaming of the AI's response token by token.
 
@@ -18,22 +18,20 @@ SpeechRecognition
 pyaudio
 google-generativeai
 langchain-core
-Installation
 
+Installation
 Clone the repository:
 git clone https://github.com/yourusername/streaming-bot.git
 cd streaming-bot
 
 Install the required Python packages:
 pip install streamlit gtts SpeechRecognition pyaudio google-generativeai langchain-core
-
 Set up your Google Generative Model API key:
-Replace "your-api-key" with your actual API key in the code.
+Replace "AIzaSyCkFfYYLmmR9BGVlBrPVvfEAWJQ6a4ORzI" with your actual API key in the code.
 
 Usage
 Run the Streamlit app:
 streamlit run app.py
-
 Open your web browser and navigate to the URL provided by Streamlit (typically http://localhost:8501).
 Interact with the bot by typing in the input box or using the microphone button to speak your query.
 
@@ -53,14 +51,13 @@ from langchain_core.messages import HumanMessage, AIMessage
 genai.configure(api_key="YOUR_API_KEY")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-
-Helper Functions
+2)Helper Functions
 autoplay_audio(file_path: str): Converts the audio file to base64 and embeds it into an HTML audio tag for autoplay.
 generate_response_gemini(query): Generates a response using the Gemini model and cleans the text.
 text_to_speech(text, filename="response.mp3"): Converts text to speech using gTTS and saves it as an MP3 file.
 recognize_speech_from_mic(): Captures audio from the microphone and converts it to text using Google's Speech Recognition API.
 
-2)Streamlit UI and Logic
+3)Streamlit UI and Logic
 Initializes the chat history and sets up the Streamlit page configuration.
 Displays the chat history.
 Provides input methods for text and speech.
