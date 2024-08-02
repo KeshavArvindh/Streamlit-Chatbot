@@ -9,7 +9,7 @@ import google.generativeai as genai
 from langchain_core import *
 from langchain_core.messages import HumanMessage, AIMessage
 
-genai.configure(api_key="AIzaSyCkFfYYLmmR9BGVlBrPVvfEAWJQ6a4ORzI")
+genai.configure(api_key="Your-Api-key")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def autoplay_audio(file_path: str):
