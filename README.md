@@ -68,20 +68,20 @@ import google.generativeai as genai\
 from langchain_core import *\
 from langchain_core.messages import HumanMessage, AIMessage\
 genai.configure(api_key="YOUR_API_KEY")\
-model = genai.GenerativeModel('gemini-1.5-flash')\
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 2) Helper Functions
 autoplay_audio(file_path: str): Converts the audio file to base64 and embeds it into an HTML audio tag for autoplay.\
 generate_response_gemini(query): Generates a response using the Gemini model and cleans the text.\
 text_to_speech(text, filename="response.mp3"): Converts text to speech using gTTS and saves it as an MP3 file.\
-recognize_speech_from_mic(): Captures audio from the microphone and converts it to text using Google's Speech Recognition API.\
+recognize_speech_from_mic(): Captures audio from the microphone and converts it to text using Google's Speech Recognition API.
 
 3) Streamlit UI and Logic
 1)Initializes the chat history and sets up the Streamlit page configuration.\
 2)Displays the chat history.\
 3)Provides input methods for text and speech.\
 4)Processes the user query and generates an AI response.\
-5)Streams the AI's response token by token and plays the audio.\
+5)Streams the AI's response token by token and plays the audio.
 
 License\
 This project is licensed under the MIT License - see the LICENSE file for details.
