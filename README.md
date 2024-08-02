@@ -8,7 +8,7 @@ Text Input: Users can type their questions in the input box.\
 Speech Input: Users can use their microphone to ask questions.\
 Real-Time Streaming: The AI's response is displayed token by token, providing a dynamic interaction.\
 Audio Response: The response is converted to speech and played back automatically.\
-Chat History: The conversation history is maintained throughout the session.\
+Chat History: The conversation history is maintained throughout the session.
 
 
 Prerequisites:\
@@ -19,7 +19,7 @@ gTTS\
 SpeechRecognition\
 pyaudio\
 google-generativeai\
-langchain-core\
+langchain-core
 
 
 
@@ -30,7 +30,7 @@ langchain-core\
 
 1) Clone the repository:
 ```bash
-git clone https://github.com/yourusername/streaming-bot.git \
+git clone https://github.com/yourusername/streaming-bot.git 
 cd streaming-bot
 ```
 
